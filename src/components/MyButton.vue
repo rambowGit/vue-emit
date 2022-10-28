@@ -1,11 +1,9 @@
 <template>
-  <button class="btn" type="button">
-    <span> Click Me </span>
-  </button>
+	<p-Button label="Load posts" class="p-button-raised p-button-lg" icon="pi pi-check" />
 </template>
 <script>
 export default {
-  name: "my-button",
+	name: "my-button",
 };
 </script>
 <style scoped>

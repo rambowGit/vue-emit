@@ -1,29 +1,43 @@
-module.exports = {
-  root: true,
-  env: {
-    node: true,
-  },
-  extends: [
-    "plugin:vue/vue3-essential",
-    "eslint:recommended",
-    "plugin:prettier/recommended",
-  ],
-  parserOptions: {
-    parser: "@babel/eslint-parser",
-  },
-  rules: {
-    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
-    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
-  },
-  overrides: [
-    {
-      files: [
-        "**/__tests__/*.{j,t}s?(x)",
-        "**/tests/unit/**/*.spec.{j,t}s?(x)",
-      ],
-      env: {
-        jest: true,
-      },
-    },
-  ],
+module.exports = {	
+	"env": {    
+		"browser": true,
+		"es6": true,
+		"node": true,
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:vue/vue3-essential",
+	],
+	"parserOptions": {
+		// "ecmaVersion": "latest",
+		// "sourceType": "module"
+		"ecmaVersion": "2018",
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"modules": true
+		}
+	},
+	"plugins": [
+		"vue"
+	],
+	"rules": {
+		"indent": [
+			"error",
+			"tab"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
+		]
+	},
+	
+	
 };
