@@ -1,5 +1,7 @@
 # emit-test
 
+Тестирование функционала Vue3, axios, primevue
+
 ## Project setup
 ```
 npm install
